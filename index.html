@@ -40,6 +40,8 @@
     <link rel="stylesheet" href="css/landio.css">
     <link rel="stylesheet" type="text/css" href="css/base.css" />
 	<link rel="stylesheet" type="text/css" href="css/player.css" />
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -47,18 +49,14 @@
     <!-- Navigation
     ================================================== -->
 
-    <nav class="navbar navbar-dark bg-inverse bg-inverse-custom navbar-fixed-top">
+    <nav class=" navbar-dark bg-inverse bg-inverse-custom navbar-fixed-top" style="background-color: #89d0f0;">
       <div class="container">
         <a class="navbar-brand" href="#">
           <span class="icon-log"><img src="img/logo_crop.jpeg"/ style="width:100px;"></span>
           <span class="sr-only"></span>
         </a>
-        <a class="navbar-toggler hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">
-        &#9776;
-      </a>
-        <a class="navbar-toggler navbar-toggler-custom hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingMobileUser" aria-expanded="false" aria-controls="collapsingMobileUser">
-          <span class="icon-user"></span>
-        </a>
+       
+        
         <!--<div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
           <ul class="nav navbar-nav pull-xs-right">
             <li class="nav-item nav-item-toggable">
@@ -137,13 +135,13 @@
     <!-- Hero Section
     ================================================== -->
 
-    <header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner" style="background:#89d0f0 !important;">
+    <header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner" style="background:#89d0f0 !important;margin-bottom: 0!important;">
        	<div class="container">
        		
      
-        <h1 class="display-3">Augmented World</h1>
-        <h2 class="m-b-3">Showcase your best, <em>anywhere anytime</em>,with <a href="" class="jumbolink">BuildAR</a>.</h2>
-        <a class="btn btn-secondary-outline m-b-1" href="#interiors" role="button" style="background-image: linear-gradient(-90deg, #f9a15f,#f15384)"><span class="icon-sketch"></span>See How</a>
+        <h1 class="display-3" style="font-family: Raleway!important;">Augment Your World</h1>
+        <h2 class="m-b-3" style="font-family: Raleway!important;">Showcase your best, <em>anywhere anytime</em>,with <a href="" class="jumbolink">BuildAR</a>.</h2>
+        <a class="btn btn-secondary-outline m-b-1" href="#interiors" role="button" style="background-image: linear-gradient(-90deg, #f9a15f,#f15384);border-radius:2em !important;"><span class="icon-sketch"></span>See How</a>
 					<div class="player-info">
 						<div class="player-cover">
 						</div>
@@ -184,22 +182,30 @@
 
     <section class="section-intro bg-faded text-xs-center" id="interiors">
       <div class="container" >
-        <h3 class="wp wp-1">Interiors Revolutionized</h3>
-        <h5 class="wp wp-1" style="padding-bottom: 3em;">Measure your room and view it to decorate with tiles,flooring and furniture</p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/m1newxC5GI4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-       <!-- <img src="img/mock.png" alt="iPad mock" class="img-fluid wp wp-3">-->
+        <h2 class="wp wp-1 img-fluid col-md-5 p-lg-5 mx-auto my-5" style="font-family: 'Montserrat', sans-serif !important;">Interiors Revolutionized</h3>
+        <h4 class="wp wp-1 " style="padding-bottom: 2em;font-family: Lato !important;">Measure your room and view it to decorate with tiles and furniture</h4>
+       <img src="img/tiles.gif" alt="iPad mock" class="img-fluid wp wp-3">
       </div>
 
     </section>
     <section class="section-intro bg-faded text-xs-center" id="digitalhuman">
       <div class="container" >
-        <h3 class="wp wp-1 img-fluid">Digital Humans</h3>
-        <h5 class="wp wp-1 img-fluid" style="padding-bottom: 3em;">Your own digital replica,limited only by your imagination</p>
-        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/XnjogWjn_e0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-       <img src="img/digitalhuman.gif" alt="iPad mock" class="img-fluid wp wp-3">
+        <div class="col-md-6">
+          
+       <h4 class="wp wp-1 col-md-6" style="font-family: Lato !important;">Your digital clone</h4>
+       <img src="img/digitalhuman2.gif" alt="iPad mock" class="img-fluid wp wp-3">
+
+        </div>
+       
+        <h2 class="wp wp-1 col-md-6" style="font-family: 'Montserrat', sans-serif !important;float: right;">Digital Humans</h2>
+        
       </div>
 
     </section>
+    
+
+
+
     <!-- <section class="section-intro bg-faded text-xs-center" id="digitalhuman">
       <div class="container" >
         <h3 class="wp wp-1">Augmented Shoes</h3>
@@ -219,28 +225,12 @@
 
     </section>-->
 
-    			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
-			  <defs>
-			    <filter id="goo">
-			      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-			      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
-			      <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
-			    </filter>
-			    <filter id="goo-no-comp">
-			      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-			      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9" result="goo" />
-			    </filter>
-			    <filter id="goo-drops">
-			      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
-			      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
-			    </filter>
-			  </defs>
-			</svg>
+    		
 
     <!-- Video
     ================================================== -->
 
-    <section class="section-video bg-inverse text-xs-center wp wp-4">
+    <section class="section-video bg-inverse text-xs-center wp wp-4" style="margin-top: 2em;">
       <h3 class="sr-only">Video</h3>
 
       <h3><a href="https://drive.google.com/file/d/1FGFjiokQQLvhrHwP9UFoZZTApN2q-fhB/view?usp=sharing" target="_blank">Click to see Presentation</a></h3>
@@ -555,6 +545,23 @@
         </div>
       </div>
     </footer>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+            <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+          </filter>
+          <filter id="goo-no-comp">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9" result="goo" />
+          </filter>
+          <filter id="goo-drops">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+          </filter>
+        </defs>
+      </svg>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/landio.min.js"></script>
