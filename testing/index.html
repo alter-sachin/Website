@@ -1,0 +1,68 @@
+<div class="overlay hidden">
+  <h1>Please call our customer care executive to resolve this issue</h1>
+</div>
+
+<div id="content">
+  <a href="" class="open-overlay">Recipe1</a><br/><br/><br/>
+  <a href="" class="open-overlay1">Recipe2</a><br/><br/><br/>
+  <a href="" class="open-overlay2">Recipe3</a><br/><br/><br/>
+  <p>Hello World</p>
+</div>
+
+
+
+
+<style>
+	.freeze { pointer-events: none; }
+
+.hidden { display: none; }
+
+.overlay {
+  position: fixed;
+  z-index: 100;
+  padding: 20px;
+  background: white;
+  border: solid 1px #ccc;
+  width: 80vw;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+</style>
+
+<script>
+	
+	const content = document.getElementById('content')
+const overlay = document.querySelector('.overlay')
+const a = document.querySelector('.open-overlay')
+const b = document.querySelector('.open-overlay1')
+const c = document.querySelector('.open-overlay2')
+const close = document.querySelector('.overlay .close')
+
+// Open a popup and freeze the browser content
+a.addEventListener('click', e => {
+  e.preventDefault()
+  content.classList.add('freeze')
+  overlay.classList.remove('hidden')
+})
+b.addEventListener('click', e => {
+  e.preventDefault()
+  content.classList.add('freeze')
+  overlay.classList.remove('hidden')
+})
+c.addEventListener('click', e => {
+  e.preventDefault()
+  content.classList.add('freeze')
+  overlay.classList.remove('hidden')
+})
+
+
+
+// Close the popup window and unfreeze the browser content
+close.addEventListener('click', e => {
+  e.preventDefault()
+  content.classList.remove('freeze')
+  overlay.classList.add('hidden')
+})
+</script>

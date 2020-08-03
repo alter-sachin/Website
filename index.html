@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167625667-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-167625667-1');
+</script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>BuildAR.in: Build and Visualise your new homes</title>
+    <title>BuildAR.in: The Augmented Reality Revolution</title>
     <meta name="description" content="Visualise your future home with BuildAR" />
     <meta name="keywords" content="free html template, bootstrap, ui kit, sass" />
     <meta name="author" content="Peter Finlan and Taty Grassini Codrops" />
@@ -17,17 +27,19 @@
     <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="img/favicon/buildar.ico" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon/buildar.ico" sizes="192x192">
+    <link rel="icon" type="image/png" href="img/favicon/buildar.ico" sizes="96x96">
+    <link rel="icon" type="image/png" href="img/favicon/buildar.ico" sizes="16x16">
     <link rel="manifest" href="img/favicon/manifest.json">
-    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <link rel="shortcut icon" href="img/favicon/buildar.ico">
     <meta name="msapplication-TileColor" content="#663fb5">
     <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
     <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#663fb5">
     <link rel="stylesheet" href="css/landio.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/player.css" />
   </head>
 
   <body>
@@ -38,7 +50,7 @@
     <nav class="navbar navbar-dark bg-inverse bg-inverse-custom navbar-fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <span class="icon-log">BuildAR</span>
+          <span class="icon-log"><img src="img/logo_crop.jpeg"/ style="width:100px;"></span>
           <span class="sr-only"></span>
         </a>
         <a class="navbar-toggler hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">
@@ -125,11 +137,41 @@
     <!-- Hero Section
     ================================================== -->
 
-    <header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner">
-      <div class="container">
-        <h1 class="display-3">Visualize Your Interiors</h1>
-        <h2 class="m-b-3">Craft your next home, <em>from anywhere</em>, with <a href="" class="jumbolink">BuildAR technology</a>.</h2>
-        <a class="btn btn-secondary-outline m-b-1" href="#seehow" role="button"><span class="icon-sketch"></span>See How</a>
+    <header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner" style="background:#89d0f0 !important;">
+       	<div class="container">
+       		
+     
+        <h1 class="display-3">Augmented World</h1>
+        <h2 class="m-b-3">Showcase your best, <em>anywhere anytime</em>,with <a href="" class="jumbolink">BuildAR</a>.</h2>
+        <a class="btn btn-secondary-outline m-b-1" href="#interiors" role="button" style="background-image: linear-gradient(-90deg, #f9a15f,#f15384)"><span class="icon-sketch"></span>See How</a>
+					<div class="player-info">
+						<div class="player-cover">
+						</div>
+					</div>
+					<div class="player-spectrum">
+						<div class="player-spectrum-bars">
+							<div class="player-spectrum-bar"></div>
+							<div class="player-spectrum-bar"></div>
+							<div class="player-spectrum-bar"></div>
+							<div class="player-spectrum-bar"></div>
+							<div class="player-spectrum-bar"></div>
+							<div class="player-spectrum-bar"></div>
+							<div class="player-spectrum-bar"></div>
+							<div class="player-spectrum-bar"></div>
+							<div class="player-spectrum-bar"></div>
+							<div class="player-spectrum-bar"></div>
+							<div class="player-spectrum-bar"></div>
+							<div class="player-spectrum-bar"></div>
+							<div class="player-spectrum-bar"></div>
+							<div class="player-spectrum-bar"></div>
+							<div class="player-spectrum-bar"></div>
+							<div class="player-spectrum-bar"></div>
+						</div>
+						<div class="player-spectrum-floor"></div>
+					</div>
+					<div class="player-drops"></div>
+
+				</div>
         <!--<ul class="nav nav-inline social-share">
           <li class="nav-item"><a class="nav-link" href="#"><span class="icon-twitter"></span> 1024</a></li>
           <li class="nav-item"><a class="nav-link" href="#"><span class="icon-facebook"></span> 562</a></li>
@@ -137,27 +179,71 @@
         </ul>-->
       </div>
     </header>
-
     <!-- Intro
     ================================================== -->
 
-    <section class="section-intro bg-faded text-xs-center" id="seehow">
+    <section class="section-intro bg-faded text-xs-center" id="interiors">
       <div class="container" >
-        <h3 class="wp wp-1">View Designs of Furniture, Walls, Paints AnyWhere AnyTime</h3>
-        <h5 class="wp wp-1" style="padding-bottom: 3em;">We Make Imagining Your Future Home Easy</p>
+        <h3 class="wp wp-1">Interiors Revolutionized</h3>
+        <h5 class="wp wp-1" style="padding-bottom: 3em;">Measure your room and view it to decorate with tiles,flooring and furniture</p>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/m1newxC5GI4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
        <!-- <img src="img/mock.png" alt="iPad mock" class="img-fluid wp wp-3">-->
       </div>
-    </section>
 
-    
+    </section>
+    <section class="section-intro bg-faded text-xs-center" id="digitalhuman">
+      <div class="container" >
+        <h3 class="wp wp-1 img-fluid">Digital Humans</h3>
+        <h5 class="wp wp-1 img-fluid" style="padding-bottom: 3em;">Your own digital replica,limited only by your imagination</p>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/XnjogWjn_e0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+       <img src="img/digitalhuman.gif" alt="iPad mock" class="img-fluid wp wp-3">
+      </div>
+
+    </section>
+    <!-- <section class="section-intro bg-faded text-xs-center" id="digitalhuman">
+      <div class="container" >
+        <h3 class="wp wp-1">Augmented Shoes</h3>
+        <h5 class="wp wp-1" style="padding-bottom: 3em;">Wear Any shoe,without ever leaving your house</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/m1newxC5GI4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <!-- <img src="img/mock.png" alt="iPad mock" class="img-fluid wp wp-3">
+      </div>
+
+    </section>
+    <section class="section-intro bg-faded text-xs-center" id="digitalhuman">
+      <div class="container" >
+        <h3 class="wp wp-1">3D Properties</h3>
+        <h5 class="wp wp-1" style="padding-bottom: 3em;">Sell your properties like never before</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/m1newxC5GI4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <!-- <img src="img/mock.png" alt="iPad mock" class="img-fluid wp wp-3">
+      </div>
+
+    </section>-->
+
+    			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
+			  <defs>
+			    <filter id="goo">
+			      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+			      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+			      <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+			    </filter>
+			    <filter id="goo-no-comp">
+			      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+			      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9" result="goo" />
+			    </filter>
+			    <filter id="goo-drops">
+			      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+			      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+			    </filter>
+			  </defs>
+			</svg>
 
     <!-- Video
     ================================================== -->
 
     <section class="section-video bg-inverse text-xs-center wp wp-4">
       <h3 class="sr-only">Video</h3>
-      
+
+      <h3><a href="https://drive.google.com/file/d/1FGFjiokQQLvhrHwP9UFoZZTApN2q-fhB/view?usp=sharing" target="_blank">Click to see Presentation</a></h3>
       <!--<video id="demo_video" class="video-js vjs-default-skin vjs-big-play-centered" controls poster="img/video-poster.jpg" data-setup='{}'>
         <source src="https://youtu.be/m1newxC5GI4" type='video/mp4'>
         <source src="https://youtu.be/m1newxC5GI4" type='video/webm'>
@@ -165,8 +251,6 @@
     </section>
 
 
-    <!-- Features
-    ================================================== 
 
     <section class="section-features text-xs-center">
       <div class="container">
@@ -175,9 +259,9 @@
             <div class="card">
               <div class="card-block">
                 <span class="icon-pen display-1"></span>
-                <h4 class="card-title">250</h4>
-                <h6 class="card-subtitle text-muted">UI Elements</h6>
-                <p class="card-text">Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras eu adipiscing ac cras at sem cras per senectus eu parturient quam.</p>
+                <h4 class="card-title">7X</h4>
+                <h6 class="card-subtitle text-muted">More Likely To Buy</h6>
+                <p class="card-text">Research shows that AR technology helps increase sales by 7 times compared to other mediums</p>
               </div>
             </div>
           </div>
@@ -185,9 +269,9 @@
             <div class="card">
               <div class="card-block">
                 <span class="icon-thunderbolt display-1"></span>
-                <h4 class="card-title">Ultra</h4>
-                <h6 class="card-subtitle text-muted">Modern design</h6>
-                <p class="card-text">Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras eu adipiscing ac cras at sem cras per senectus eu parturient quam.</p>
+                <h4 class="card-title">Big Brands</h4>
+                <h6 class="card-subtitle text-muted">Use AR</h6>
+                <p class="card-text">Big companies Like Coke Dominos Nike are using such products to improve their marketing and get more customers to buy.</p>
               </div>
             </div>
           </div>
@@ -195,9 +279,9 @@
             <div class="card m-b-0">
               <div class="card-block">
                 <span class="icon-heart display-1"></span>
-                <h4 class="card-title">Free</h4>
-                <h6 class="card-subtitle text-muted">Forever and ever</h6>
-                <p class="card-text">Sed risus feugiat fusce eu sit conubia venenatis aliquet nisl cras eu adipiscing ac cras at sem cras per senectus eu parturient quam.</p>
+                <h4 class="card-title">Coronavirus</h4>
+                <h6 class="card-subtitle text-muted"> Proof</h6>
+                <p class="card-text">People have stopped going to physical locations due to the novel corona-virus.BuildAR brings your products to the people.</p>
               </div>
             </div>
           </div>
@@ -451,7 +535,10 @@
               </div>
               <small class="media-body media-bottom">
                 &copy; Buildar.in 2020 <br>
-                A unit of Baabae Technologies Pvt Ltd.
+                A unit of Baabae Technologies Pvt Ltd. 
+                A1 / 1, GT Karnal Road, Model Town,
+				Mahendru Enclave, KTM North.
+				New Delhi
               </small>
             </div>
           </div>
@@ -471,5 +558,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/landio.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+	<script src="js/player.js"></script>
   </body>
 </html>
